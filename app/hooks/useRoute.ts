@@ -6,47 +6,45 @@ import { BookMarked, BookOpen, Home, LayoutGrid, LibraryBig, Lightbulb, PackageP
 
 
 const useRoutes = () =>{
-    const pathname = usePathname();
-
     const routes = useMemo(
       () => [
         {
           label: "Home",
-          href: "/home",
+          href: "#",
           icon: Home,
         },
         {
           label: "All Duas",
-          href: "/all-duas",
+          href: "#",
           icon: LayoutGrid,
         },
         {
           label: "Memorize",
-          href: "/memorize",
+          href: "#",
           icon: Lightbulb,
         },
         {
           label: "Bookmark",
-          href: "/bookmark",
+          href: "#",
           icon: BookMarked,
         },
         {
           label: "Ruqyah",
-          href: "/ruqyah",
+          href: "#",
           icon: PackagePlus,
         },
         {
           label: "Dua Info",
-          href: "/dua-info",
+          href: "#",
           icon: LibraryBig,
         },
         {
           label: "Books",
-          href: "/books",
+          href: "#",
           icon: BookOpen,
         },
       ],
-      [pathname]
+      []
     );
 
     return routes;
