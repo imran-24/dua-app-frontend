@@ -9,16 +9,14 @@ interface DesktopItemProps{
   icon: LucideIcon,
   onClick?: ()=> void,
   active?: boolean,
-  href: string
 }
 const DesktopItem: React.FC<DesktopItemProps> = ({
   label,
   icon: Icon,
-  href
 }) => {
   return (
    <li >
-      <Link href={href}
+      <div 
       className={
         clsx(`
         group
@@ -34,7 +32,7 @@ const DesktopItem: React.FC<DesktopItemProps> = ({
       }>
         <Icon className='h-5 w-5 shrink-0 group-hover:scale-110 duration-300 ease-in-out transition-all' />
         <span className='sr-only'>{label}</span>
-      </Link>
+      </div>
    </li>
   )
 }

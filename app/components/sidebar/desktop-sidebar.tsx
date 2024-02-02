@@ -62,8 +62,6 @@ const DesktopSidebar = () => {
                     <DesktopItem 
                     key={item.label}
                     label={item.label}
-                    
-                    href={item.href}
                     icon={item.icon}
                     
                    />

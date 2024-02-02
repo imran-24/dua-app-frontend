@@ -10,37 +10,30 @@ const useRoutes = () =>{
       () => [
         {
           label: "Home",
-          href: "#",
           icon: Home,
         },
         {
           label: "All Duas",
-          href: "#",
           icon: LayoutGrid,
         },
         {
           label: "Memorize",
-          href: "#",
           icon: Lightbulb,
         },
         {
           label: "Bookmark",
-          href: "#",
           icon: BookMarked,
         },
         {
           label: "Ruqyah",
-          href: "#",
           icon: PackagePlus,
         },
         {
           label: "Dua Info",
-          href: "#",
           icon: LibraryBig,
         },
         {
           label: "Books",
-          href: "#",
           icon: BookOpen,
         },
       ],

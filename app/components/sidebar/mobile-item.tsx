@@ -5,19 +5,16 @@ import React, { useCallback } from 'react'
 
 interface MobileItemProps{
     label: string,
-    href: string,
     icon: LucideIcon
 }
 const MobileItem: React.FC<MobileItemProps> = ({
     label,
-    href,
     icon: Icon,
     
 }) => {
     
   return (
-    <Link href={href}
-      className={
+    <div  className={
         clsx(`
         group
         flex
@@ -36,7 +33,7 @@ const MobileItem: React.FC<MobileItemProps> = ({
       }>
         <Icon className='h-5 w-5 shrink-0 group-hover:scale-110 duration-300 ease-in-out transition-all' />
         <span className='sr-only'>{label}</span>
-      </Link>
+      </div>
   )
 }
 

@@ -25,7 +25,6 @@ const MobileFooter = () => {
                 <MobileItem 
                 key={item.label}
                 label={item.label}
-                href={item.href}
                 icon={item.icon}/>
             ))
         }
