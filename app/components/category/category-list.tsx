@@ -16,6 +16,7 @@ const CategoryList = () => {
   const router = useRouter()
 
   useEffect(() => {
+    if(categories.length === 0) return ;
     setSubCat({[categories[0]?.cat_id] : true})
     router.push(`/duas/?cat=${categories[0]?.cat_id}`)
   },[categories, router])

@@ -18,6 +18,7 @@ const MobileFooter = () => {
     justify-between
     px-4
     md:hidden
+    border-t
     '>
         {
             routes.map((item)=>(

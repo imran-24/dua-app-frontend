@@ -80,14 +80,13 @@ const DesktopSidebar = () => {
           <div className='
           relative
           overflow-hidden
-          h-8
-          w-8
-          md:h-10
-          md:w-10
-          rounded-full
+          h-4
+          w-4
+          md:h-6
+          md:w-6
           cursor-pointer
           '>
-            <Image fill src={'/dua-logo.png'} alt='user' />    
+            <Image fill src={'/praying.png'} alt='user' />    
           </div>
         </nav>
 

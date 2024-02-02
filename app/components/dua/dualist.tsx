@@ -32,14 +32,18 @@ const DuaList = () => {
     }, [categoryId]);
     
   return (
-    <div className='
-    h-full 
+    <div 
+    style={{ height: 'calc(100vh - 4rem)' }}
+    className='
+    pb-12
+    pt-2
+    md:p-0
     col-span-12
     lg:col-span-8
     xl:col-span-7
-    overflow-hidden
+    overflow-y-auto
     '>
-        <div ref={scrollRef} className='h-[635px] scroll-smooth md:h-[680px] flex flex-col gap-y-2 overflow-auto'>
+        <div ref={scrollRef} className='scroll-smooth md:h-full flex flex-col gap-y-2 overflow-auto'>
             {
               duas.length == 0
               ? <Loading large />
